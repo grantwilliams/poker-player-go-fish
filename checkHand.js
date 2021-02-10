@@ -71,7 +71,7 @@ function evaluateBoard(gameState) {
   } catch (err) {
     console.log("err::", err.message);
 
-    return 0;
+    return check(gameState);
   }
 
   const ourResult = Result.getPlayers()
