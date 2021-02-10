@@ -27,9 +27,10 @@ function sortCards(cards) {
 }
 
 function isFirstRound(gameState) {
+  console.log("first round communit cards::", gameState.community_cards);
   return (
     !gameState.community_cards ||
-    (gameState.communityCards && gameState.communityCards.length === 0)
+    (gameState.community_cards && gameState.community_cards.length === 0)
   );
 }
 
