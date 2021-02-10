@@ -1,4 +1,4 @@
-const Poker = require('./checkHand');
+const Poker = require("./checkHand");
 
 class Player {
   static get VERSION() {
@@ -6,7 +6,7 @@ class Player {
   }
 
   static get name() {
-    return 'Go Fish'
+    return "Go Fish";
   }
 
   static betRequest(gameState, bet) {

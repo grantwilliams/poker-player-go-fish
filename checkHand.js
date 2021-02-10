@@ -65,7 +65,7 @@ function playHand(gameState) {
     readCards(gameState),
     gameState.community_cards,
   ];
-  const fullHand = [...card, ...communityCards];
+  const fullHand = [...cards, ...communityCards];
 
   if (isFirstRound(gameState)) {
     return evalFirstRound(gameState);
@@ -134,6 +134,6 @@ const communityCards = [
 
 console.log(isStraight(cards, communityCards));
 
-module.exports = {
-  playHand,
-};
+const Poker = { playHand };
+
+module.exports = Poker;
