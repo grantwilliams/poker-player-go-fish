@@ -3,11 +3,12 @@
   "description": "Javascript player from lean poker. http://leanpoker.org",
   "version": "0.0.2",
   "engines": {
-    "node": "6.x"
+    "node": "12.x"
   },
   "private": true,
   "dependencies": {
+    "body-parser": "1.15.2",
     "express": "4.x",
-    "body-parser": "1.15.2"
+    "poker-odds-calc": "0.0.14"
   }
 }
