@@ -19,7 +19,7 @@ function mapToStringValue(card) {
   console.log("card::", card);
   const { rank, suit } = card;
 
-  return rank === 10 ? `T${suit[0]}` : `${rank}${suit[0]}`;
+  return rank === '10' ? `T${suit[0]}` : `${rank}${suit[0]}`;
 }
 
 const dummyPlayers = [["2d", "3d"]];
