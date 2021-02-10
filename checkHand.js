@@ -54,12 +54,10 @@ function evalFirstRound(gameState) {
 
   if (ourCards.some((card) => getCardValue(card) >= 11)) {
     // current_buy_in - players[in_action][bet] + minimum_raise
-    return (
-      gameState.current_buy_in - player.bet + gameState.minimum_raise
-    );
+    return gameState.current_buy_in - player.bet + gameState.minimum_raise;
   }
 
-  return 0
+  return 0;
 }
 
 function playHand(gameState) {
@@ -72,7 +70,7 @@ function playHand(gameState) {
   if (isFirstRound(gameState)) {
     return evalFirstRound(gameState);
   } else {
-    return getPlayer(gameState).stack
+    return getPlayer(gameState).stack;
   }
 
   const havePair = havePair(cards);
@@ -135,3 +133,7 @@ const communityCards = [
 ];
 
 console.log(isStraight(cards, communityCards));
+
+module.exports = {
+  playHand,
+};
